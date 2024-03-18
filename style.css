@@ -1,0 +1,285 @@
+body {
+    font-family: 'Courier New'
+    background-color: #ffb997;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;
+    /*hight: 100vd;;*/
+    
+}
+
+.container {
+    font-family: 'Courier New'
+    text-align: center;
+    font-size: 20px;
+    background-color: #ffb997;
+    color: #0b032d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    font-weight: bold; 
+}
+
+h1 {
+    font-family: 'Courier New'
+    font-size: 25px;
+    font-weight: bold; 
+
+}
+p{
+    font-size: 20px;
+}
+
+p1{
+    font-size: 15px;
+}
+
+.large-rectangular {
+    font-family: 'Courier New'
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #fc9a6a;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.large-rectangular:hover {
+    background-color: #ffb997;
+    color: #ffffff;
+}
+
+
+#result {
+    /*margin-top: 20px;*/
+    padding: 10px;
+    background-color: #ffb997;
+    /*border: 2px solid #ddd;
+    border-radius: 5px;*/
+    display: none;
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 400px; /* Set max-width to 400px */
+}
+
+
+#game p{
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+#result p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+}
+
+#game img {
+    max-width: 100%;
+    max-height: 300px;
+    display: block;
+    margin: center;
+    font-size: 25px;
+}
+
+level-image {
+    max-width: 350px;
+    height: auto;
+    align-items: center;
+    margin: 5px;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.chat-bubble {
+    background-color: #aaebfa;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 12px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.result-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result-text {
+    flex-grow: 1;
+}
+
+.result-image-container {
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.result-image img {
+    max-width: 350px;
+    height: auto;
+    align-items: center;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+
+.start-button {
+    font-family: 'Courier New'
+    background-color: #f59d87; 
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #ffffff;
+    color: ##b33e3e;
+}
+
+
+.level-button {
+    font-family: 'Courier New'
+    background-color: #e87676;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.level-button:hover {
+    background-color: #e87676; 
+    color: rgb;
+}
+
+
+.top-image {
+    width: 100%;
+    /*max-height: 200px;*/
+    object-fit: cover;
+}
+
+.button {
+    font-family: 'Courier New'
+    background-color: #f46b6b;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    font-size: 15px; /
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 100px;
+    line-height: 1.5;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.button:hover {
+    background-color: #e87676;
+}
+
+/
+a {
+    font-size: 20px;
+    color: #000000;
+}
+
+a:hover {
+    color: #b33e3e;
+}
+
+
+a.no-underline {
+    color: #000000; /
+    text-decoration: none;
+}
+
+a.no-underline:hover {
+    color: #000000; /* Change to the desired color */
+    text-decoration: none;
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    font-size: 10px;
+    background-color: #fce6d9;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+  
+.hover-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+footer {
+    text-align: center;
+}
+  
+footer p {
+    font-size: 10px; 
+    color: #fcf4f0;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+.top-image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
